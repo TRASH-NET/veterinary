@@ -1,0 +1,14 @@
+@use 'variables' as v;
+
+.error{
+    background-color: v.$red-wine;
+    color: v.$white;
+    font-family: v.$Font-standart;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    padding: .75rem;
+    text-transform: uppercase;
+    margin-bottom: .75rem;
+    border-radius: .5rem;
+}

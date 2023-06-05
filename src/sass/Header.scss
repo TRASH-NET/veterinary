@@ -1,0 +1,16 @@
+@use 'variables' as v;
+
+.header__title {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    font-family: v.$Font-standart;
+    width: 50%;
+    margin: auto;
+    & span {
+        color: v.$purple;
+    }
+    @media screen and (min-width: 768px) {
+        width: 66.6%;
+    }
+}

@@ -1,0 +1,70 @@
+@use 'variables' as v;
+
+.form {
+    margin: 2.5rem 0;
+    @media screen and (min-width: 768px) {
+        width: 50%; 
+    }
+    @media screen and (min-width: 1024px) {
+        width: 40%;
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 900;
+        text-align: center;
+        font-family: v.$Font-standart;
+    }
+    &__addPatient{
+        font-size: 18px;
+        font-weight: 900;
+        margin-top: 12px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        & span {
+            color: v.$purple;
+        }
+    }
+    &__action{
+        background-color: v.$white;
+        box-shadow: 0 3px 6px;
+        border-radius: .5rem;
+        padding: 1.5rem 1.25rem;
+    }
+    
+    &__actionContainer{
+        margin-bottom: 1.5rem;
+    }
+    &__label{
+        color: v.$gray-dark;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        outline: none;
+        border: 2px solid v.$gray-soft;
+        padding: 0.5rem;
+        margin-top: .5rem;
+        &::placeholder {
+            color: v.$gray;
+        }
+    }
+    &__symptoms{
+        resize: none;
+    }
+    &__submit{
+        background-color: v.$purple;
+        width: 100%;
+        padding: 0.75rem;
+        color: v.$white;
+        text-transform: uppercase;
+        font-weight: 900;
+        border: none;
+        transition: all .15s;
+        &:hover{
+            cursor: pointer;
+            background-color: v.$purple-strong;
+        }
+    }
+}
